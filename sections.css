@@ -1,0 +1,92 @@
+.section {
+    padding-left: 2em;
+    padding-right: 2em;
+
+}
+
+.section h1,
+.section h2,
+.section h3,
+.section h4 {
+    margin: 0;
+}
+
+
+.section {
+    text-align: center;
+}
+
+.section header {
+    padding-bottom: 1.5em;
+}
+.section header a {
+    color: #000;
+    text-decoration: none;
+}
+
+.section.section-header .wrapper {
+    padding: 10em 0;
+}
+
+.section-header .wrapper header {
+    padding-bottom: 3em;
+}
+
+
+.section-header .wrapper h1 {
+    font-family: 'PT Serif' ,serif;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.section-header .wrapper h4 {
+    font-style: italic;
+    padding-bottom: 1.2em;
+}
+
+.section .section-content {
+    color:#A7A3A0;
+
+}
+.section .section-content a {
+    text-decoration: none;
+}
+
+
+.section.section-services .wrapper,
+.section.section-portfolio .wrapper,
+.section.section-team .wrapper,
+.section.section-contact .wrapper {
+    padding: 8em 3em 4em 3em;
+}
+.section.section-services .wrapper h3,
+.section.section-portfolio .wrapper h3,
+.section.section-team .wrapper h3,
+.section.section-contact .wrapper h3{
+    text-transform: uppercase;
+    font-weight: 900;
+    /* padding-bottom: 1.2em; */
+}
+
+
+.section.section-portfolio {
+    background:#F4EEE9;
+}
+
+.section.section-team {
+    background: #F1E9DA;
+}
+
+.section.section-contact {
+    background: #011627;
+}
+
+.section.section-contact header {
+    color: #FFF;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,142 @@
+ul.users-list,
+ul.icon-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2.5em 2em 2em 2em;
+    margin: 0;
+}
+
+ul.icon-list {
+    justify-content: space-around;
+    padding-top: 1em;
+}
+ 
+ul.users-list li,
+ul.icon-list li {
+    display: block;
+    list-style: none outside;
+    text-align: center;
+    flex: 0 0 100%;
+    margin-bottom: 3em;
+}
+
+
+ul.icon-list li {
+    margin: 0;
+    flex: 0 0 20%;
+}
+
+ul.users-list span,
+ul.icon-list span {
+    display: block;
+}
+
+
+
+ul.users-list .user-avatar {
+    width: 7em;
+    margin: 0 auto;
+    margin-bottom: 1.5em;
+}
+
+.user-avatar,
+.icon-brand {
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    background: #F7D753;
+}
+
+
+.icon-brand {
+    background: #000;
+}
+
+ul.users-list .type-service,
+ul.users-list .user-name {
+    font-weight: 900;
+    color: #000;
+}
+
+ul.users-list .user-position {
+    font-size: 0.8em;
+}
+
+ul.users-list .type-service .user-message,
+ul.users-list .type-service + .user-message{
+    padding-top: 1.5em;
+
+}
+
+.user-avatar:before,
+.portfolio-avatar:before,
+.icon-brand:before,
+.user-avatar:after,
+.portfolio-avatar:after,
+.icon-brand:after {
+    display: block;
+    content: '';
+}
+.user-avatar:before,
+.icon-brand:before {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(255,255,255,0.9);
+    z-index: 10;
+    pointer-events: none;
+}
+
+.icon-brand:before {
+    box-shadow: 0 0 0 0;
+}
+
+.user-avatar:after,
+.icon-brand:after {
+    padding-top: 100%;
+}
+
+.user-avatar img,
+.icon-brand p {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 5;
+}
+
+.social-list{
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+.social-list p{
+    padding: 0;
+    margin: 0;
+}
+
+
+@media (min-width:900px){
+    ul.users-list li,
+    ul.icon-list li {
+        flex: 0 0 30%;
+    }
+    ul.icon-list {
+        justify-content: space-between;
+        padding-top: 1em;
+    }
+    ul.icon-list li {
+        margin: 0;
+        flex: 0 0 30%;
+    }
+
+}
+
+
+
+

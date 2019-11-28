@@ -1,0 +1,80 @@
+body {
+    background: #FFF;
+}
+
+.wrapper {
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 0 1.5em;  
+}
+
+.wrapper-header {
+    background:#F7D753;
+}
+
+.site-header {
+    padding-top: 2em;
+
+}
+.site-branding,
+.site-header nav {
+    display: block;
+}
+@media (min-width:900px){
+    .site-header .wrapper,
+    .site-footer .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4em;
+    align-items: center;
+    max-width: initial;
+}
+    .site-header nav {
+        margin-left: auto;
+    }
+}
+.site-branding {
+    padding-bottom: 1.5em;
+}
+.site-branding .site-title {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.site-branding .site-title a {
+    text-decoration: none;
+    color: #000;
+    font-style:italic;
+}
+
+.site-footer {
+    padding:2em;
+}
+
+.site-footer .widget:not(:last-child) {
+    padding-right: 2em;
+}
+.widget-about {
+    flex: 0 0 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media (min-width:900px) {
+    .site-branding {
+        padding:0;
+    }
+    .widget-about {
+        flex: 0 0 50%;
+    }
+
+}
+
+
+
+
+
+
+

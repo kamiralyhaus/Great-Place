@@ -1,0 +1,87 @@
+.form-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2.5em 2em 2em 2em;
+    max-width: 50rem;
+    margin: 2em auto;
+
+}
+.form-contact p {
+    display: block;
+    width: 100%;
+}
+
+.form-contact input,
+.form-contact textarea {
+    display:block;
+    width: 100%;
+    outline: none;
+}
+
+.form-contact input[type="email"],
+.form-contact input[type="password"],
+.form-contact input[type="text"],
+.form-contact textarea {
+    padding: 1.2em;
+    border: 2px solid #011627;
+    border-radius: 0.3em;
+    margin:0 0 0.8em 0;
+}
+
+.form-contact input[type="email"]:hover,
+.form-contact input[type="password"]:hover,
+.form-contact input[type="text"]:hover,
+.form-contact textarea:hover
+ {
+    border-color: #F7D753;
+}
+
+.form-contact input[type="email"]:focus,
+.form-contact input[type="password"]:focus,
+.form-contact input[type="text"]:focus,
+.form-contact textarea:focus {
+    border-color:#E54B4B;
+
+}
+
+
+.form-contact input[type="submit"] {
+    padding: 1.2em 2em;
+    background: #F7D753;
+    color: #FFF;
+    border-radius: 0.3em;
+    border: 2px solid #F7D753;
+    cursor: pointer;
+    max-width: 30em;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+form input[type="submit"]:focus,
+form input[type="submit"]:hover {
+    background: #FFF;
+    color: #F7D753;
+}
+
+
+.form-contact input::placeholder,
+.form-contact textarea::placeholder {
+    font-size: 0.8em;
+
+}
+.form-contact textarea {
+    height: 100%;
+}
+
+
+@media (min-width:900px){
+    .form-contact p {
+        flex:0 0 48%;
+    }
+    .form-contact input[type="submit"] {
+        max-width: 15em;
+    }
+}
+
